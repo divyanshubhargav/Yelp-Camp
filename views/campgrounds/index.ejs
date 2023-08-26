@@ -36,9 +36,9 @@
   </div>
   <% }%> <%- include('../partials/paginate') %>
 </div>
-<script>
+<script type="text/javascript" >
   const mapToken = `<%-process.env.MAPBOX_TOKEN%>`;
   const campgrounds = { features: `<%- JSON.stringify(campgrounds.docs) %>` };
 </script>
 
-<script src="/javascripts/clusterMap.js"></script>
+<script type="text/javascript"  src="/javascripts/clusterMap.js"></script>

@@ -82,6 +82,7 @@ const connectSrcUrls = [
   "https://api.mapbox.com",
   "https://*.tiles.mapbox.com",
   "https://events.mapbox.com",
+  "https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js"
 ];
 
 const fontSrcUrls = [];
@@ -98,7 +99,7 @@ app.use(
         "'self'",
         "blob:",
         "data:",
-        "https://res.cloudinary.com/dqjfgnf0m/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT!
+        "https://res.cloudinary.com/dqjfgnf0m/image/upload/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT!
         "https://images.unsplash.com",
       ],
       fontSrc: ["'self'", ...fontSrcUrls],
